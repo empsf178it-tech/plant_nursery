@@ -8,7 +8,7 @@ const SOLUTIONS = [
   {
     id: 'orchard',
     title: 'Fruit Orchard Planning',
-    image: '/images/1.png',
+    image: './images/1.png',
     desc: 'Plan and establish fruit orchards with selected mango, guava, lemon and dragon fruit varieties. We advise on spacing, variety selection and early care to ensure productive orchards.',
     plants: ['Mango Sapling', 'Guava Sapling', 'Lemon Sapling', 'Dragon Fruit'],
     slug: 'orchard',
@@ -16,7 +16,7 @@ const SOLUTIONS = [
   {
     id: 'coconut',
     title: 'Coconut Plantation',
-    image: '/images/4.png',
+    image: './images/4.png',
     desc: 'Establish coconut plantations with selected dwarf seedlings suited to your land type. Guidance on spacing, soil preparation, drip irrigation and nutrient management.',
     plants: ['Dwarf Coconut Sapling'],
     slug: 'coconut',
@@ -24,7 +24,7 @@ const SOLUTIONS = [
   {
     id: 'timber',
     title: 'Timber & Teak Forestry',
-    image: '/images/5.png',
+    image: './images/5.png',
     desc: 'Teak wood, mahogany and red sandalwood plantations for long-term high value investment and ecological boundary protection.',
     plants: ['Teak Wood Sapling', 'Red Sandalwood', 'Mahogany'],
     slug: 'timber',
@@ -32,7 +32,7 @@ const SOLUTIONS = [
   {
     id: 'vegetable',
     title: 'Vegetable Cultivation',
-    image: '/images/6.png',
+    image: './images/6.png',
     desc: 'Healthy seedlings for commercial vegetable cultivation. We prepare seedlings in controlled nursery conditions, ready for field transplantation.',
     plants: ['Hybrid Tomato', 'Chilli Seedling Tray', 'Brinjal'],
     slug: 'vegetable',
@@ -40,7 +40,7 @@ const SOLUTIONS = [
   {
     id: 'mixed',
     title: 'Mixed Agroforestry System',
-    image: '/images/9.png',
+    image: './images/9.png',
     desc: 'Combine fruit trees, coconut, native species and vegetables in an integrated farming layout that maximizes yield and soil health.',
     plants: ['Multiple Plant Types'],
     slug: 'mixed',
@@ -66,7 +66,7 @@ export default function Solutions() {
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/plantation.jpg" alt="Solutions" className="page-hero__img" />
+          <img src="./images/plantation.jpg" alt="Solutions" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">

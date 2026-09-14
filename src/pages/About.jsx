@@ -99,7 +99,7 @@ export default function About() {
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/farmer.jpg" alt="About NATIVERA" className="page-hero__img" />
+          <img src="./images/farmer.jpg" alt="About NATIVERA" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">
@@ -127,7 +127,7 @@ export default function About() {
         <div className="container">
           <div className="about-grid">
             <Reveal className="about-img">
-              <img src="/images/nursery-wide.jpg" alt="Our nursery" loading="lazy" />
+              <img src="./images/nursery-wide.jpg" alt="Our nursery" loading="lazy" />
             </Reveal>
             <div>
               <Reveal>

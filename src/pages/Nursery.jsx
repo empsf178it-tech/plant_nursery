@@ -14,12 +14,12 @@ function Reveal({ children, delay = 0, className = '' }) {
 }
 
 const STAGES = [
-  { title: 'Propagation', desc: 'Seeds and cuttings are carefully selected and propagated in controlled nursery conditions to ensure strong initial germination and root development.', image: '/images/6.png' },
-  { title: 'Seedling Care', desc: 'Young seedlings are monitored daily — watering schedules are maintained, weak plants are removed, and healthy growth is encouraged.', image: '/images/1.png' },
-  { title: 'Irrigation & Moisture Control', desc: 'Drip and sprinkler irrigation systems maintain consistent moisture levels across the nursery, preventing water stress and overwatering.', image: '/images/4.png' },
-  { title: 'Plant Nutrition & Soil Management', desc: 'Appropriate organic fertiliser applications support healthy foliage and root growth during the nursery phase.', image: '/images/9.png' },
-  { title: 'Sunlight Hardening', desc: 'Plants are gradually exposed to open field sunlight conditions before dispatch, reducing transplantation shock.', image: '/images/13.png' },
-  { title: 'Dispatch & Packing', desc: 'Plants are checked for root health, root-ball trimmed, labelled and prepared for safe transport to your farm.', image: '/images/14.png' },
+  { title: 'Propagation', desc: 'Seeds and cuttings are carefully selected and propagated in controlled nursery conditions to ensure strong initial germination and root development.', image: './images/6.png' },
+  { title: 'Seedling Care', desc: 'Young seedlings are monitored daily — watering schedules are maintained, weak plants are removed, and healthy growth is encouraged.', image: './images/1.png' },
+  { title: 'Irrigation & Moisture Control', desc: 'Drip and sprinkler irrigation systems maintain consistent moisture levels across the nursery, preventing water stress and overwatering.', image: './images/4.png' },
+  { title: 'Plant Nutrition & Soil Management', desc: 'Appropriate organic fertiliser applications support healthy foliage and root growth during the nursery phase.', image: './images/9.png' },
+  { title: 'Sunlight Hardening', desc: 'Plants are gradually exposed to open field sunlight conditions before dispatch, reducing transplantation shock.', image: './images/13.png' },
+  { title: 'Dispatch & Packing', desc: 'Plants are checked for root health, root-ball trimmed, labelled and prepared for safe transport to your farm.', image: './images/14.png' },
 ];
 
 export default function Nursery() {
@@ -27,7 +27,7 @@ export default function Nursery() {
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/nursery-wide.jpg" alt="Nursery" className="page-hero__img" />
+          <img src="./images/nursery-wide.jpg" alt="Nursery" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">

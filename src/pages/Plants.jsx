@@ -45,7 +45,7 @@ export default function Plants() {
       {/* Hero */}
       <section className="page-hero page-hero--plants">
         <div className="page-hero__bg">
-          <img src="/images/nursery-wide.jpg" alt="Plants" className="page-hero__img" />
+          <img src="./images/nursery-wide.jpg" alt="Plants" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">

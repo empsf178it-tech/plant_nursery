@@ -140,7 +140,7 @@ export default function PlantCare() {
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/macro-leaf.jpg" alt="Plant Care" className="page-hero__img" />
+          <img src="./images/macro-leaf.jpg" alt="Plant Care" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">

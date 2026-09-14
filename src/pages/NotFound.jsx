@@ -9,7 +9,7 @@ export default function NotFound() {
     <PageWrapper>
       <div className="not-found">
         <div className="not-found__img">
-          <img src="/images/macro-leaf.jpg" alt="" />
+          <img src="./images/macro-leaf.jpg" alt="" />
         </div>
         <div className="not-found__content">
           <motion.div

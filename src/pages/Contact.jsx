@@ -57,7 +57,7 @@ export default function Contact() {
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/worker.jpg" alt="Contact" className="page-hero__img" />
+          <img src="./images/worker.jpg" alt="Contact" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">
@@ -175,7 +175,7 @@ export default function Contact() {
             {/* Right Column: Banner, Info Cards & Google Map */}
             <div>
               <Reveal className="contact-img">
-                <img src="/images/nursery-wide.jpg" alt="NATIVERA nursery" loading="lazy" />
+                <img src="./images/nursery-wide.jpg" alt="NATIVERA nursery" loading="lazy" />
               </Reveal>
 
               <Reveal delay={0.15}>

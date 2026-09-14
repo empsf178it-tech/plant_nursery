@@ -9,37 +9,37 @@ const PROJECTS = [
   {
     title: 'Mango Orchard — 10 Acres',
     type: 'Fruit Orchard',
-    image: '/images/1.png',
+    image: './images/1.png',
     desc: 'Grafted Alphonso mango saplings supplied and planned for a 10-acre commercial orchard development.',
   },
   {
     title: 'Coconut Plantation — 5 Acres',
     type: 'Coconut Plantation',
-    image: '/images/4.png',
+    image: './images/4.png',
     desc: 'Malayan Dwarf coconut saplings prepared in our nursery for field planting in coastal soil conditions.',
   },
   {
     title: 'Commercial Vegetable Plot',
     type: 'Vegetable Cultivation',
-    image: '/images/6.png',
+    image: './images/6.png',
     desc: 'Hybrid tomato and chilli seedling trays prepared for seasonal high-yield commercial cultivation.',
   },
   {
     title: 'Red Sandalwood & Agroforestry',
     type: 'Native & Timber Forestry',
-    image: '/images/9.png',
+    image: './images/9.png',
     desc: 'Red Sandalwood and native timber trees supplied for mixed agroforestry across farmland boundaries.',
   },
   {
     title: 'High-Yield Pomegranate Orchard',
     type: 'Mixed Fruit Orchard',
-    image: '/images/11.png',
+    image: './images/11.png',
     desc: 'Bhagwa pomegranate saplings combined with guava and lemon for a high-density 3-acre fruit farm.',
   },
   {
     title: 'Nursery Infrastructure & Shade House',
     type: 'Nursery Development',
-    image: '/images/nursery-wide.jpg',
+    image: './images/nursery-wide.jpg',
     desc: 'Internal nursery expansion with climate-controlled shade-net structures to boost production capacity.',
   },
 ];
@@ -87,7 +87,7 @@ export default function Projects() {
     <PageWrapper>
       <section className="page-hero">
         <div className="page-hero__bg">
-          <img src="/images/plantation.jpg" alt="Projects" className="page-hero__img" />
+          <img src="./images/plantation.jpg" alt="Projects" className="page-hero__img" />
           <div className="page-hero__overlay" />
         </div>
         <div className="page-hero__content container">

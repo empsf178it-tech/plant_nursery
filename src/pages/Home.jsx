@@ -168,7 +168,7 @@ const STORY_STAGES = [
     title: 'SELECT', 
     subtitle: 'Variety & Soil Compatibility',
     desc: 'We match sapling varieties to your soil type, water availability, and local micro-climate to ensure maximal growth potential and yield.', 
-    image: '/images/mango.jpg', 
+    image: './images/mango.jpg', 
     tag: 'Variety Selection' 
   },
   { 
@@ -176,7 +176,7 @@ const STORY_STAGES = [
     title: 'NURTURE', 
     subtitle: 'Controlled Nursery Care',
     desc: 'Saplings grow under expert nursery care with precision micro-irrigation, shaded structures, and optimal organic plant nutrition.', 
-    image: '/images/worker.jpg', 
+    image: './images/worker.jpg', 
     tag: 'Nursery Growth' 
   },
   { 
@@ -184,7 +184,7 @@ const STORY_STAGES = [
     title: 'PREPARE', 
     subtitle: 'Root Audits & Hardening',
     desc: 'Prior to delivery, plants undergo root health audits, bag trimming, and field hardening so they transition smoothly without transplant shock.', 
-    image: '/images/nursery-wide.jpg', 
+    image: './images/nursery-wide.jpg', 
     tag: 'Field Readiness' 
   },
   { 
@@ -192,17 +192,17 @@ const STORY_STAGES = [
     title: 'PLANT', 
     subtitle: 'Field Spacing & Establishment',
     desc: 'Move saplings into your field with our guidance on pit layout, spacing recommendations, initial organic fertilization, and watering.', 
-    image: '/images/plantation.jpg', 
+    image: './images/plantation.jpg', 
     tag: 'Field Planting' 
   },
 ];
 
 const COLLECTION_CARDS = [
-  { title: 'Fruit Plants', desc: 'Mango, guava, lemon and other fruit saplings for orchards.', image: '/images/1.png', cat: 'fruit' },
-  { title: 'Plantation Crops', desc: 'Coconut, timber, red sandalwood and other plantation-ready species.', image: '/images/4.png', cat: 'plantation' },
-  { title: 'Vegetable Seedlings', desc: 'Healthy seedling trays for commercial agricultural cultivation.', image: '/images/6.png', cat: 'vegetable' },
-  { title: 'Native Trees', desc: 'Selected native tree species for agroforestry and shade.', image: '/images/9.png', cat: 'native' },
-  { title: 'Garden & Flowering', desc: 'Selected ornamental, fragrant jasmine and flowering plants.', image: '/images/27.png', cat: 'flowering' },
+  { title: 'Fruit Plants', desc: 'Mango, guava, lemon and other fruit saplings for orchards.', image: './images/1.png', cat: 'fruit' },
+  { title: 'Plantation Crops', desc: 'Coconut, timber, red sandalwood and other plantation-ready species.', image: './images/4.png', cat: 'plantation' },
+  { title: 'Vegetable Seedlings', desc: 'Healthy seedling trays for commercial agricultural cultivation.', image: './images/6.png', cat: 'vegetable' },
+  { title: 'Native Trees', desc: 'Selected native tree species for agroforestry and shade.', image: './images/9.png', cat: 'native' },
+  { title: 'Garden & Flowering', desc: 'Selected ornamental, fragrant jasmine and flowering plants.', image: './images/27.png', cat: 'flowering' },
 ];
 
 const PLANTATION_OPTIONS = [
@@ -225,11 +225,11 @@ function PlantationCalculator() {
   const [selectedCrop, setSelectedCrop] = useState('mango');
 
   const CROPS = [
-    { id: 'mango', name: 'Alphonso Mango', density: 100, spacing: '6m × 6m', image: '/images/1.png' },
-    { id: 'coconut', name: 'Dwarf Coconut', density: 60, spacing: '8m × 8m', image: '/images/4.png' },
-    { id: 'guava', name: 'Pink Guava', density: 250, spacing: '4m × 4m', image: '/images/2.png' },
-    { id: 'teak', name: 'Teak Timber', density: 400, spacing: '3m × 3m', image: '/images/5.png' },
-    { id: 'vegetable', name: 'Hybrid Tomatoes', density: 8000, spacing: '45cm × 60cm', image: '/images/6.png' },
+    { id: 'mango', name: 'Alphonso Mango', density: 100, spacing: '6m × 6m', image: './images/1.png' },
+    { id: 'coconut', name: 'Dwarf Coconut', density: 60, spacing: '8m × 8m', image: './images/4.png' },
+    { id: 'guava', name: 'Pink Guava', density: 250, spacing: '4m × 4m', image: './images/2.png' },
+    { id: 'teak', name: 'Teak Timber', density: 400, spacing: '3m × 3m', image: './images/5.png' },
+    { id: 'vegetable', name: 'Hybrid Tomatoes', density: 8000, spacing: '45cm × 60cm', image: './images/6.png' },
   ];
 
   const cropObj = CROPS.find(c => c.id === selectedCrop) || CROPS[0];
@@ -455,7 +455,7 @@ export default function Home() {
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="hero" ref={heroRef} id="hero">
         <motion.div className="hero__bg" style={{ scale: heroScale }}>
-          <img src="/images/hero.jpg" alt="NATIVERA nursery" className="hero__img" />
+          <img src="./images/hero.jpg" alt="NATIVERA nursery" className="hero__img" />
           <div className="hero__overlay" />
         </motion.div>
 
@@ -562,7 +562,7 @@ export default function Home() {
             </div>
             <Reveal delay={0.15} className="intro__image-wrap">
               <div className="intro__image-frame">
-                <img src="/images/macro-leaf.jpg" alt="Healthy plant close-up" className="intro__image" loading="lazy" />
+                <img src="./images/macro-leaf.jpg" alt="Healthy plant close-up" className="intro__image" loading="lazy" />
               </div>
             </Reveal>
           </div>
@@ -632,7 +632,7 @@ export default function Home() {
       {/* ── REAL NURSERY FEATURE SHOWCASE ─────────────────── */}
       <section className="nursery-fullwidth" id="nursery-cta">
         <div className="nursery-fullwidth__bg">
-          <img src="/images/nursery-wide.jpg" alt="NATIVERA nursery facility" className="nursery-fullwidth__img" loading="lazy" />
+          <img src="./images/nursery-wide.jpg" alt="NATIVERA nursery facility" className="nursery-fullwidth__img" loading="lazy" />
           <div className="nursery-fullwidth__overlay" />
         </div>
 
@@ -738,7 +738,7 @@ export default function Home() {
         <div className="container">
           <div className="farmer__grid">
             <Reveal className="farmer__image-wrap">
-              <img src="/images/farmer.jpg" alt="South Indian farmer" className="farmer__img" loading="lazy" />
+              <img src="./images/farmer.jpg" alt="South Indian farmer" className="farmer__img" loading="lazy" />
             </Reveal>
             <div className="farmer__text">
               <Reveal>
@@ -810,7 +810,7 @@ export default function Home() {
       <section className="final-cta" id="final-cta">
         <div className="final-cta__bg">
           <motion.img
-            src="/images/plantation.jpg"
+            src="./images/plantation.jpg"
             alt="Plantation"
             className="final-cta__img"
             style={{ scale: useTransform(
