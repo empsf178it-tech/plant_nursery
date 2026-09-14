@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Outer Ring -->
+  <circle cx="24" cy="24" r="22" stroke="#2E6F40" stroke-width="1.2" stroke-dasharray="90 20" opacity="0.5"/>
+  
+  <!-- Golden Sun Dot -->
+  <circle cx="24" cy="9.5" r="2.5" fill="#E2A649"/>
+  
+  <!-- Left Leaf -->
+  <path d="M24 39C24 39 13.5 31.5 13.5 21C13.5 15 17.5 10.5 24 10.5C24 16.5 20 25.5 24 39Z" fill="#3A8050"/>
+  
+  <!-- Right Leaf -->
+  <path d="M24 39C24 39 34.5 30.5 34 18.5C33.2 9 24.5 8.5 24 8.5C24 16 28 24.5 24 39Z" fill="#8BB896"/>
+  
+  <!-- Stem Line -->
+  <path d="M24 39V19" stroke="#E2A649" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Root Base Dot -->
+  <circle cx="24" cy="40" r="1.8" fill="#E2A649"/>
+</svg>
