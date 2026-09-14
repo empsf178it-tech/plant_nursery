@@ -1,0 +1,157 @@
+/* Logo Styling for NATIVERA */
+.nativera-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  user-select: none;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.nativera-logo:hover {
+  transform: translateY(-1px);
+}
+
+/* Icon Wrapper & Sizes */
+.nativera-logo__icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nativera-logo--small .nativera-logo__icon-wrapper {
+  width: 32px;
+  height: 32px;
+}
+
+.nativera-logo--medium .nativera-logo__icon-wrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.nativera-logo--large .nativera-logo__icon-wrapper {
+  width: 52px;
+  height: 52px;
+}
+
+.nativera-logo__icon {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transition: transform 0.4s ease;
+}
+
+.nativera-logo:hover .nativera-logo__icon {
+  transform: rotate(5deg) scale(1.04);
+}
+
+/* Default / Dark Background Variant (Navbar default, Footer) */
+.nativera-logo--default,
+.nativera-logo--light {
+  color: var(--color-warm-cream);
+}
+
+.nativera-logo--default .nativera-logo__ring,
+.nativera-logo--light .nativera-logo__ring {
+  opacity: 0.35;
+}
+
+.nativera-logo--default .nativera-logo__leaf-left,
+.nativera-logo--light .nativera-logo__leaf-left {
+  fill: #3A8050;
+}
+
+.nativera-logo--default .nativera-logo__leaf-right,
+.nativera-logo--light .nativera-logo__leaf-right {
+  fill: #8BB896;
+}
+
+.nativera-logo--default .nativera-logo__sun,
+.nativera-logo--light .nativera-logo__sun,
+.nativera-logo--default .nativera-logo__root,
+.nativera-logo--light .nativera-logo__root {
+  fill: #E2A649;
+}
+
+.nativera-logo--default .nativera-logo__stem,
+.nativera-logo--light .nativera-logo__stem {
+  stroke: #E2A649;
+}
+
+/* Scrolled Navbar / Dark Text Variant */
+.nativera-logo--dark {
+  color: var(--color-deep-forest-green);
+}
+
+.nativera-logo--dark .nativera-logo__ring {
+  opacity: 0.25;
+}
+
+.nativera-logo--dark .nativera-logo__leaf-left {
+  fill: var(--color-deep-forest-green);
+}
+
+.nativera-logo--dark .nativera-logo__leaf-right {
+  fill: #2E6F40;
+}
+
+.nativera-logo--dark .nativera-logo__sun,
+.nativera-logo--dark .nativera-logo__root {
+  fill: var(--color-earth-brown);
+}
+
+.nativera-logo--dark .nativera-logo__stem {
+  stroke: var(--color-earth-brown);
+}
+
+/* Text Container */
+.nativera-logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nativera-logo__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  color: currentColor;
+  transition: color 0.4s ease;
+}
+
+.nativera-logo--small .nativera-logo__title {
+  font-size: 1.15rem;
+}
+
+.nativera-logo--medium .nativera-logo__title {
+  font-size: 1.35rem;
+}
+
+.nativera-logo--large .nativera-logo__title {
+  font-size: 1.75rem;
+}
+
+.nativera-logo__subtitle {
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: 0.7;
+  margin-top: 2px;
+  color: currentColor;
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+
+.nativera-logo--small .nativera-logo__subtitle {
+  font-size: 0.55rem;
+}
+
+.nativera-logo--medium .nativera-logo__subtitle {
+  font-size: 0.625rem;
+}
+
+.nativera-logo--large .nativera-logo__subtitle {
+  font-size: 0.75rem;
+}

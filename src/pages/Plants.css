@@ -1,0 +1,217 @@
+/* ─── PAGE HERO — defined in SharedPages.css ────────── */
+
+/* ─── FILTERS ───────────────────────────────────────── */
+.plants-filters {
+  background: var(--color-warm-cream);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+}
+
+.plants-filters__inner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.plants-filters__icon {
+  color: var(--color-soft-sage);
+  margin-right: 0.5rem;
+}
+
+.plants-filter-btn {
+  position: relative;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.45rem 1.15rem;
+  border-radius: 100px;
+  background: transparent;
+  border: 1.5px solid rgba(0,0,0,0.12);
+  color: var(--color-charcoal);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plants-filter-btn__text {
+  position: relative;
+  z-index: 2;
+}
+
+.plants-filter-btn__active-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--color-deep-forest-green);
+  border-radius: 100px;
+  z-index: 1;
+}
+
+.plants-filter-btn:hover {
+  border-color: var(--color-deep-forest-green);
+  color: var(--color-deep-forest-green);
+}
+
+.plants-filter-btn--active {
+  border-color: var(--color-deep-forest-green);
+  color: var(--color-warm-cream) !important;
+}
+
+/* ─── CATALOG GRID ──────────────────────────────────── */
+.plants-catalog { background: var(--color-warm-cream); }
+
+.plants-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.catalog-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.catalog-card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.catalog-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  text-decoration: none;
+}
+
+.catalog-card__img-wrap {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.catalog-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.catalog-card:hover .catalog-card__img { transform: scale(1.06); }
+
+.catalog-card__badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--color-deep-forest-green);
+  color: var(--color-warm-cream);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+}
+
+.catalog-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.catalog-card__name {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  color: var(--color-deep-forest-green);
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+  min-height: 3.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.catalog-card__app {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted-terracotta);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.catalog-card__desc {
+  font-size: 0.875rem;
+  color: #6a6a6a;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.9rem;
+}
+
+.catalog-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-deep-forest-green);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: auto;
+}
+
+/* ─── ENQUIRY CTA ────────────────────────────────────── */
+.plants-enquiry__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ─── EMPTY STATE ────────────────────────────────────── */
+.plants-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem;
+  color: #6a6a6a;
+}
+
+.plants-empty a {
+  color: var(--color-deep-forest-green);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .plants-catalog__grid {
+    grid-template-columns: 1fr;
+  }
+  .plants-enquiry__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
